@@ -82,7 +82,7 @@
       .mbpfw-deck{margin:8px 0 28px}
       .mbpfw-gallery{gap:22px 10px}
     }
-  </style>
+  .photo-kind,.photo-caption{display:none}.photo-frame{cursor:zoom-in}.lightbox{width:min(94vw,1200px);height:min(92vh,900px);max-width:none;max-height:none;margin:auto;padding:54px 24px 24px;border:1px solid rgba(255,255,255,.16);background:rgba(18,18,18,.97);color:#fff}.lightbox::backdrop{background:rgba(12,12,12,.9);backdrop-filter:blur(5px)}.lightbox img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;margin:auto}.lightbox button{position:absolute;top:10px;right:18px;border:0;background:none;color:#fff;font-size:30px;line-height:1;cursor:pointer}.lightbox-caption{position:absolute;top:21px;left:24px;color:#ccc;font-size:9px;letter-spacing:.16em;text-transform:uppercase}.measurements{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;border-top:1px solid var(--line);padding:20px 0 0;margin:28px 0 0}.measurements div{display:grid;gap:6px}.measurements dt{font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}.measurements dd{margin:0;color:var(--ink);font-family:var(--serif);font-size:20px}.contact-links{display:grid;justify-items:end;gap:12px;font-size:11px;letter-spacing:.04em}.contact-links a{border-bottom:1px solid var(--line);padding-bottom:5px}.contact-links a:hover{border-color:var(--ink)}@media(max-width:760px){.lightbox{width:100vw;height:100dvh;padding:60px 12px 18px;border:0}.lightbox-caption{left:14px;top:21px}.measurements{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:20px}.contact-links{justify-items:start}}</style>
 </head>
 <body>
   <header class="shell masthead" id="top">
@@ -135,12 +135,12 @@
     </section>
     <section class="about" id="about">
       <div><span class="section-index">A little about me · 01</span><h2>In front of the lens.</h2></div>
-      <div class="about-copy"><p>Available for editorial, runway, and commercial projects.</p></div>
+      <div class="about-copy"><p>Available for editorial, runway, and commercial projects.</p><dl class="measurements" aria-label="Model measurements"><div><dt>Height</dt><dd>174 cm</dd></div><div><dt>Bust</dt><dd>88 cm</dd></div><div><dt>Waist</dt><dd>58 cm</dd></div><div><dt>Hips</dt><dd>84 cm</dd></div><div><dt>Shoe</dt><dd>38 EU</dd></div></dl></div>
     </section>
-    <section class="contact" id="contact"><div><span class="section-index">02 · Get in touch</span><h2>Let’s make something.</h2><p>For bookings, castings, and collaborations.</p></div></section>
+    <section class="contact" id="contact"><div><span class="section-index">02 · Get in touch</span><h2>Let’s make something.</h2><p>For bookings, castings, and collaborations.</p></div><div class="contact-links"><a href="mailto:alisa.savina.02@outlook.com">alisa.savina.02@outlook.com</a><a href="https://www.instagram.com/alisafierra/" target="_blank" rel="noreferrer">Instagram · @alisafierra ↗</a></div></section>
   </main>
   <footer class="shell footer"><span>© <span id="year">2026</span> Ali Savi</span><a href="#top">Back to top ↑</a></footer>
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  <dialog class="lightbox" id="photo-lightbox" aria-label="Photograph enlarged"><button type="button" aria-label="Close enlarged photograph">×</button><span class="lightbox-caption" aria-hidden="true"></span><img alt=""></dialog><script>document.getElementById('year').textContent=new Date().getFullYear();const photoLightbox=document.getElementById('photo-lightbox'),enlargedPhoto=photoLightbox.querySelector('img'),lightboxCaption=photoLightbox.querySelector('.lightbox-caption');function openPhoto(frame){const photo=frame.querySelector('img');if(!photo)return;enlargedPhoto.src=photo.currentSrc||photo.src;enlargedPhoto.alt=photo.alt;lightboxCaption.textContent=photo.alt;photoLightbox.showModal()}document.querySelectorAll('.photo-frame').forEach(frame=>{frame.tabIndex=0;frame.setAttribute('role','button');frame.setAttribute('aria-label','View larger: '+(frame.querySelector('img')?.alt||'photo'));frame.addEventListener('click',()=>openPhoto(frame));frame.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();openPhoto(frame)}})});photoLightbox.querySelector('button').addEventListener('click',()=>photoLightbox.close());photoLightbox.addEventListener('click',event=>{if(event.target===photoLightbox)photoLightbox.close()});photoLightbox.addEventListener('close',()=>enlargedPhoto.removeAttribute('src'));</script>
 </body>
 </html>
 
