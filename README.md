@@ -1,5 +1,5 @@
-# Model portfolio
+# Ali Savi — Model Portfolio
 
-Static portfolio site. GitHub Pages can serve this repository from the root of the `main` branch.
+A fashion portfolio for editorial, runway, and commercial projects.
 
-Replace `NAME SURNAME`, `YOUR CITY`, and `your@email.com` in `index.html` with the model's preferred public details before sharing the published URL.
+This is a static site configured for GitHub Pages from the root of the `main` branch.
