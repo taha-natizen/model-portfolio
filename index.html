@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f8f7f4">
   <meta name="description" content="Model portfolio — editorial, runway and commercial work.">
-  <title>Ali Savi — Model Portfolio</title>
+  <title>Alisa Vi — Model Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
@@ -101,14 +101,14 @@
 </head>
 <body>
   <header class="shell masthead" id="top">
-    <a class="wordmark" href="#top" aria-label="Back to top">ALI SAVI</a>
+    <a class="wordmark" href="#top" aria-label="Back to top">Alisa Vi</a>
     <div class="header-meta"><span>Model portfolio</span><i class="dot"></i><span>Editorial · Runway · Commercial</span></div>
     <nav class="nav" aria-label="Main navigation"><a href="#portfolio">Portfolio</a><a href="#polaroids">Polaroids</a><a href="#runway">Runway</a><a href="#life">My life</a><a href="#about">About</a><a href="#contact">Contact</a><a class="booking-link" href="#contact">Booking enquiries&nbsp; ↗</a></nav>
   </header>
   <main class="shell">
     <section class="intro" aria-labelledby="intro-title">
       <div><span class="kicker">Selected photographs · 2026</span><h1 id="intro-title">A study in presence.</h1></div>
-      <div class="intro-side"><p><strong>ALI SAVI</strong></p><p>Model · Editorial · Commercial</p></div>
+      <div class="intro-side"><p><strong>Alisa Vi</strong></p><p>Model · Editorial · Commercial</p></div>
     </section>
     <section class="gallery mosaic-gallery" id="portfolio" aria-label="Portfolio photographs">
       <article class="photo-card"><div class="photo-frame"><span class="photo-index">01 / 24</span><img src="assets/portrait-bw.png" alt="Black and white portrait in a leather jacket"></div><div class="photo-kind">01 — Portrait</div><div class="photo-caption">Headshot <small>Beauty</small></div></article>
@@ -153,7 +153,7 @@
       <article class="photo-card"><div class="photo-frame"><span class="photo-index">18 / 24</span><img src="runway-prague-03.jpg" alt="Avant-garde runway look in a designer atelier" loading="lazy"></div><div class="photo-kind">18 — Runway</div><div class="photo-caption">In the atelier <small>Prague</small></div></article>
     </section>
     <section class="mbpfw-section" aria-labelledby="mbpfw-title">
-      <div class="mbpfw-topline"><span>Ali Savi · Runway</span><span>Prague / 2026</span></div>
+      <div class="mbpfw-topline"><span>Alisa Vi · Runway</span><span>Prague / 2026</span></div>
       <div class="mbpfw-title-row"><div><span class="mbpfw-eyebrow">A fashion week moment</span><h2 id="mbpfw-title">Mercedes-Benz<br><em>Prague Fashion Week</em></h2></div><div class="mbpfw-date"><strong>FW26</strong><span>24 — 26 April<br>Prague, Czech Republic</span></div></div>
       <p class="mbpfw-deck">A study in presence, backstage ritual and runway light — captured during Mercedes-Benz Prague Fashion Week.</p>
       <div class="gallery mosaic-gallery mbpfw-gallery" aria-label="Mercedes-Benz Prague Fashion Week 2026 photos">
@@ -187,7 +187,7 @@
     </section>
     <section class="contact" id="contact"><div><span class="section-index">02 · Get in touch</span><h2>Let’s make something.</h2><p>For bookings, castings, and collaborations.</p></div><div class="contact-links"><a href="mailto:alisa.savina.02@outlook.com">alisa.savina.02@outlook.com</a><a href="https://www.instagram.com/alisafierra/" target="_blank" rel="noreferrer">Instagram · @alisafierra ↗</a></div></section>
   </main>
-  <footer class="shell footer"><span>© <span id="year">2026</span> Ali Savi</span><a href="#top">Back to top ↑</a></footer>
+  <footer class="shell footer"><span>© <span id="year">2026</span> Alisa Vi</span><a href="#top">Back to top ↑</a></footer>
   <dialog class="lightbox" id="photo-lightbox" aria-label="Photograph enlarged"><button type="button" aria-label="Close enlarged photograph">×</button><span class="lightbox-caption" aria-hidden="true"></span><img alt=""></dialog><script>document.getElementById('year').textContent=new Date().getFullYear();const photoLightbox=document.getElementById('photo-lightbox'),enlargedPhoto=photoLightbox.querySelector('img'),lightboxCaption=photoLightbox.querySelector('.lightbox-caption');function openPhoto(frame){const photo=frame.querySelector('img');if(!photo)return;enlargedPhoto.src=photo.currentSrc||photo.src;enlargedPhoto.alt=photo.alt;lightboxCaption.textContent=photo.alt;photoLightbox.showModal()}document.querySelectorAll('.photo-frame').forEach(frame=>{frame.tabIndex=0;frame.setAttribute('role','button');frame.setAttribute('aria-label','View larger: '+(frame.querySelector('img')?.alt||'photo'));frame.addEventListener('click',()=>openPhoto(frame));frame.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();openPhoto(frame)}})});photoLightbox.querySelector('button').addEventListener('click',()=>photoLightbox.close());photoLightbox.addEventListener('click',event=>{if(event.target===photoLightbox)photoLightbox.close()});photoLightbox.addEventListener('close',()=>enlargedPhoto.removeAttribute('src'));const polaroidCarousel=document.querySelector('.polaroid-carousel'),polaroidTrack=polaroidCarousel.querySelector('.polaroid-track'),polaroidSlides=[...polaroidTrack.children],polaroidCount=document.querySelector('.polaroid-count'),polaroidDots=document.querySelector('.polaroid-dots');let polaroidIndex=0;polaroidTrack.style.width=`${polaroidSlides.length*100}%`;polaroidSlides.forEach(slide=>slide.style.flexBasis=`${100/polaroidSlides.length}%`);function showPolaroid(index){polaroidIndex=(index+polaroidSlides.length)%polaroidSlides.length;polaroidTrack.style.transform=`translateX(-${polaroidIndex*100/polaroidSlides.length}%)`;polaroidSlides.forEach((slide,i)=>{slide.setAttribute('aria-hidden',String(i!==polaroidIndex));slide.inert=i!==polaroidIndex});polaroidCount.textContent=`${String(polaroidIndex+1).padStart(2,'0')} / ${String(polaroidSlides.length).padStart(2,'0')}`;[...polaroidDots.children].forEach((dot,i)=>dot.setAttribute('aria-current',String(i===polaroidIndex)))}polaroidSlides.forEach((_,i)=>{const dot=document.createElement('button');dot.type='button';dot.className='polaroid-dot';dot.setAttribute('aria-label',`Go to photo ${i+1}`);dot.addEventListener('click',()=>showPolaroid(i));polaroidDots.append(dot)});polaroidCarousel.querySelectorAll('[data-step]').forEach(button=>button.addEventListener('click',()=>showPolaroid(polaroidIndex+Number(button.dataset.step))));const polaroidWindow=polaroidCarousel.querySelector('.polaroid-window');polaroidWindow.addEventListener('keydown',event=>{if(event.key==='ArrowRight'){event.preventDefault();showPolaroid(polaroidIndex+1)}if(event.key==='ArrowLeft'){event.preventDefault();showPolaroid(polaroidIndex-1)}});let polaroidTouchStart=null,polaroidLastSwipe=0;polaroidWindow.addEventListener('click',event=>{if(Date.now()-polaroidLastSwipe<500){event.preventDefault();event.stopImmediatePropagation()}},true);polaroidWindow.addEventListener('pointerdown',event=>{polaroidTouchStart=event.clientX});polaroidWindow.addEventListener('pointerup',event=>{if(polaroidTouchStart===null)return;const delta=event.clientX-polaroidTouchStart;if(Math.abs(delta)>45){polaroidLastSwipe=Date.now();showPolaroid(polaroidIndex+(delta<0?1:-1))};polaroidTouchStart=null});polaroidWindow.addEventListener('pointercancel',()=>polaroidTouchStart=null);showPolaroid(0);</script>
 </body>
 </html>
