@@ -49,7 +49,7 @@
     .mosaic-gallery .photo-card:nth-of-type(n+9) .photo-frame{aspect-ratio:5/4}.mosaic-gallery#portfolio .photo-card:nth-of-type(5) .photo-frame,.mosaic-gallery#portfolio .photo-card:nth-of-type(6) .photo-frame,.mosaic-gallery#portfolio .photo-card:nth-of-type(7) .photo-frame{aspect-ratio:4/5}
     .runway-gallery{margin-top:50px}
     .runway-gallery .set-heading{margin-top:0}
-    .mbpfw-section{margin-top:96px;padding:30px 0 0;background:transparent;color:var(--ink);border:0;border-top:1px solid var(--line);position:relative;overflow:visible}
+    .mbpfw-section{margin-top:0;padding:30px 0 0;background:transparent;color:var(--ink);border:0;border-top:1px solid var(--line);position:relative;overflow:visible}
     .mbpfw-section:before{content:none}
     .mbpfw-topline{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:8px 0 18px;color:var(--muted);font-size:9px;letter-spacing:.18em;text-transform:uppercase}
     .mbpfw-title-row{display:flex;justify-content:space-between;align-items:end;gap:28px;padding:48px 0 16px}
@@ -75,7 +75,7 @@
       .mosaic-gallery .photo-card:nth-of-type(1) .photo-frame,.mosaic-gallery .photo-card:nth-of-type(6) .photo-frame,.mosaic-gallery .photo-card:nth-of-type(7) .photo-frame{aspect-ratio:1/1}
       .mosaic-gallery .photo-card:nth-of-type(5) .photo-frame,.mosaic-gallery .photo-card:nth-of-type(8) .photo-frame{aspect-ratio:3/4}
       .runway-gallery{margin-top:35px}
-      .mbpfw-section{margin-top:64px;padding:20px 16px}
+      .mbpfw-section{margin-top:0;padding:20px 16px}
       .mbpfw-section:before{left:16px}
       .mbpfw-title-row{align-items:flex-start;flex-direction:column;gap:23px;padding-top:34px}
       .mbpfw-date{border-left:0;border-top:1px solid #514e48;padding:15px 0 0}
@@ -106,6 +106,21 @@
     <nav class="nav" aria-label="Main navigation"><a href="#portfolio">Portfolio</a><a href="#polaroids">Polaroids</a><a href="#runway">Runway</a><a href="#life">My life</a><a href="#about">About</a><a href="#contact">Contact</a><a class="booking-link" href="#contact">Booking enquiries&nbsp; ↗</a></nav>
   </header>
   <main class="shell">
+    <section class="mbpfw-section" aria-labelledby="mbpfw-title">
+      <div class="mbpfw-topline"><span>Alisa Vi · Runway</span><span>Prague / 2026</span></div>
+      <div class="mbpfw-title-row"><div><span class="mbpfw-eyebrow">A fashion week moment</span><h2 id="mbpfw-title">Mercedes-Benz<br><em>Prague Fashion Week</em></h2></div><div class="mbpfw-date"><strong>FW26</strong><span>24 — 26 April<br>Prague, Czech Republic</span></div></div>
+      <p class="mbpfw-deck">A study in presence, backstage ritual and runway light — captured during Mercedes-Benz Prague Fashion Week.</p>
+      <div class="gallery mosaic-gallery mbpfw-gallery" aria-label="Mercedes-Benz Prague Fashion Week 2026 photos">
+        <article class="photo-card"><div class="photo-frame"><span class="photo-index">19 / 24</span><img src="mbpfw-prague-01.jpg" alt="Backstage portrait before a Prague fashion show" loading="lazy"></div><div class="photo-kind">19 — Backstage</div><div class="photo-caption">Before the lights <small>MBPFW</small></div></article>
+        <article class="photo-card"><div class="photo-frame"><span class="photo-index">20 / 24</span><img src="mbpfw-prague-02.jpg" alt="Dramatic monochrome backstage portrait at a fashion show" loading="lazy"></div><div class="photo-kind">20 — Backstage</div><div class="photo-caption">A quiet moment <small>MBPFW</small></div></article>
+        <article class="photo-card"><div class="photo-frame"><span class="photo-index">21 / 24</span><img src="mbpfw-prague-03.jpg" alt="Model walking the runway in a sculptural fringe look" loading="lazy"></div><div class="photo-kind">21 — Runway</div><div class="photo-caption">The silhouette <small>MBPFW</small></div></article>
+        <article class="photo-card"><div class="photo-frame"><span class="photo-index">22 / 24</span><img src="mbpfw-prague-04.jpg" alt="Motion portrait of a model in a fringed runway look" loading="lazy"></div><div class="photo-kind">22 — Runway</div><div class="photo-caption">In motion <small>MBPFW</small></div></article>
+        <article class="photo-card"><div class="photo-frame"><span class="photo-index">23 / 24</span><img src="mbpfw-prague-05.jpg" alt="Model and designer backstage during the show" loading="lazy"></div><div class="photo-kind">23 — Backstage</div><div class="photo-caption">The final details <small>MBPFW</small></div></article>
+        <article class="photo-card"><div class="photo-frame"><span class="photo-index">24 / 24</span><img src="mbpfw-prague-06.jpg" alt="Monochrome model portrait in a white look" loading="lazy"></div><div class="photo-kind">24 — Portrait</div><div class="photo-caption">After the show <small>MBPFW</small></div></article>
+      </div>
+      <a class="mbpfw-link" href="https://www.mbpfw.com/en/schedule/?season=fw26" target="_blank" rel="noreferrer">Official FW26 programme <span>↗</span></a>
+    </section>
+    
     <section class="intro" aria-labelledby="intro-title">
       <div><span class="kicker">Selected photographs · 2026</span><h1 id="intro-title">A study in presence.</h1></div>
       <div class="intro-side"><p><strong>Alisa Vi</strong></p><p>Model · Editorial · Commercial</p></div>
@@ -151,20 +166,6 @@
       <article class="photo-card"><div class="photo-frame"><span class="photo-index">16 / 24</span><img src="runway-prague-01.jpg" alt="Catwalk portrait in a sculptural fur look" loading="lazy"></div><div class="photo-kind">16 — Runway</div><div class="photo-caption">Under the lights <small>Prague</small></div></article>
       <article class="photo-card"><div class="photo-frame"><span class="photo-index">17 / 24</span><img src="runway-prague-02.jpg" alt="A runway look emerging from the audience" loading="lazy"></div><div class="photo-kind">17 — Runway</div><div class="photo-caption">The entrance <small>Prague</small></div></article>
       <article class="photo-card"><div class="photo-frame"><span class="photo-index">18 / 24</span><img src="runway-prague-03.jpg" alt="Avant-garde runway look in a designer atelier" loading="lazy"></div><div class="photo-kind">18 — Runway</div><div class="photo-caption">In the atelier <small>Prague</small></div></article>
-    </section>
-    <section class="mbpfw-section" aria-labelledby="mbpfw-title">
-      <div class="mbpfw-topline"><span>Alisa Vi · Runway</span><span>Prague / 2026</span></div>
-      <div class="mbpfw-title-row"><div><span class="mbpfw-eyebrow">A fashion week moment</span><h2 id="mbpfw-title">Mercedes-Benz<br><em>Prague Fashion Week</em></h2></div><div class="mbpfw-date"><strong>FW26</strong><span>24 — 26 April<br>Prague, Czech Republic</span></div></div>
-      <p class="mbpfw-deck">A study in presence, backstage ritual and runway light — captured during Mercedes-Benz Prague Fashion Week.</p>
-      <div class="gallery mosaic-gallery mbpfw-gallery" aria-label="Mercedes-Benz Prague Fashion Week 2026 photos">
-        <article class="photo-card"><div class="photo-frame"><span class="photo-index">19 / 24</span><img src="mbpfw-prague-01.jpg" alt="Backstage portrait before a Prague fashion show" loading="lazy"></div><div class="photo-kind">19 — Backstage</div><div class="photo-caption">Before the lights <small>MBPFW</small></div></article>
-        <article class="photo-card"><div class="photo-frame"><span class="photo-index">20 / 24</span><img src="mbpfw-prague-02.jpg" alt="Dramatic monochrome backstage portrait at a fashion show" loading="lazy"></div><div class="photo-kind">20 — Backstage</div><div class="photo-caption">A quiet moment <small>MBPFW</small></div></article>
-        <article class="photo-card"><div class="photo-frame"><span class="photo-index">21 / 24</span><img src="mbpfw-prague-03.jpg" alt="Model walking the runway in a sculptural fringe look" loading="lazy"></div><div class="photo-kind">21 — Runway</div><div class="photo-caption">The silhouette <small>MBPFW</small></div></article>
-        <article class="photo-card"><div class="photo-frame"><span class="photo-index">22 / 24</span><img src="mbpfw-prague-04.jpg" alt="Motion portrait of a model in a fringed runway look" loading="lazy"></div><div class="photo-kind">22 — Runway</div><div class="photo-caption">In motion <small>MBPFW</small></div></article>
-        <article class="photo-card"><div class="photo-frame"><span class="photo-index">23 / 24</span><img src="mbpfw-prague-05.jpg" alt="Model and designer backstage during the show" loading="lazy"></div><div class="photo-kind">23 — Backstage</div><div class="photo-caption">The final details <small>MBPFW</small></div></article>
-        <article class="photo-card"><div class="photo-frame"><span class="photo-index">24 / 24</span><img src="mbpfw-prague-06.jpg" alt="Monochrome model portrait in a white look" loading="lazy"></div><div class="photo-kind">24 — Portrait</div><div class="photo-caption">After the show <small>MBPFW</small></div></article>
-      </div>
-      <a class="mbpfw-link" href="https://www.mbpfw.com/en/schedule/?season=fw26" target="_blank" rel="noreferrer">Official FW26 programme <span>↗</span></a>
     </section>
     <section class="shell life-section" id="life" aria-labelledby="life-title">
       <div class="life-copy"><span class="kicker">Beyond the portfolio</span><h2 id="life-title">A life in motion.</h2><p>I’m curious about how a place shapes the way we see the world. In 2024, City Models invited me to Paris, where I spent a month immersed in the city’s rhythm. Since then, travelling through Norway, Italy, Sweden and Germany has deepened my interest in new cultures, local food and everyday style. I work as a designer, make time for sport, and bring that visual curiosity to everything I do. Fashion brings these interests together—and it’s the industry I’m excited to grow in.</p></div>
